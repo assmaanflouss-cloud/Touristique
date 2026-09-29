@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Découvrez le Maroc</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f1e8;
+            color: #333;
+        }
+
+        /* MENU */
+
+        nav {
+            background-color: #9b2226;
+            text-align: center;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd166;
+        }
+
+        /* ACCUEIL */
+
+        header {
+            background-image:
+                linear-gradient(rgba(0,0,0,0.4),
+                rgba(0,0,0,0.4)),
+                url("https://images.unsplash.com/photo-1539020140153-e479b8c22e70");
+
+            background-size: cover;
+            background-position: center;
+
+            height: 480px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            color: white;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 55px;
+            margin: 10px;
+        }
+
+        header p {
+            font-size: 22px;
+        }
+
+        /* INTRODUCTION */
+
+        .intro {
+            text-align: center;
+            padding: 35px;
+        }
+
+        .intro h2 {
+            color: #9b2226;
+        }
+
+        .intro p {
+            font-size: 18px;
+        }
+
+        /* VILLES */
+
+        .cities {
+            width: 90%;
+            margin: auto;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .card {
+            background-color: white;
+
+            width: 300px;
+
+            border-radius: 15px;
+            overflow: hidden;
+
+            box-shadow: 0 4px 12px gray;
+
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h2 {
+            color: #9b2226;
+        }
+
+        .card p {
+            padding: 0 15px;
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+
+            background-color: #9b2226;
+            color: white;
+
+            text-decoration: none;
+
+            padding: 12px 22px;
+            margin: 15px;
+
+            border-radius: 8px;
+        }
+
+        .button:hover {
+            background-color: #6d171a;
+        }
+
+        /* FOOTER */
+
+        footer {
+            margin-top: 40px;
+
+            background-color: #333;
+            color: white;
+
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 38px;
+            }
+
+            header p {
+                font-size: 18px;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- MENU -->
+
+    <nav>
+
+        <a href="index.html">Accueil</a>
+
+        <a href="agadir.html">Agadir</a>
+
+        <a href="ouarzazate.html">Ouarzazate</a>
+
+        <a href="chefchaouen.html">Chefchaouen</a>
+
+        <a href="marrakech.html">Marrakech</a>
+
+    </nav>
+
+
+    <!-- PAGE D'ACCUEIL -->
+
+    <header>
+
+        <h1>🇲🇦 Bienvenue au Maroc</h1>
+
+        <p>
+            Découvrez les plus belles destinations du Maroc
+        </p>
+
+    </header>
+
+
+    <!-- INTRODUCTION -->
+
+    <section class="intro">
+
+        <h2>Découvrez le Maroc</h2>
+
+        <p>
+            Le Maroc est un pays riche par sa culture,
+            son histoire, ses paysages et ses traditions.
+            Découvrez quelques-unes de ses magnifiques villes.
+        </p>
+
+    </section>
+
+
+    <!-- LES VILLES -->
+
+    <section class="cities">
+
+
+        <!-- AGADIR -->
+
+        <div class="card">
+
+            <img
+                src="agadir.jpeg"
+                alt="Agadir">
+
+            <h2>🌴 Agadir</h2>
+
+            <p>
+                Découvrez la plage d'Agadir, Agadir Oufella,
+                le téléphérique, le Souk El Had et la Marina.
+            </p>
+
+            <a class="button" href="agadir.html">
+                Découvrir Agadir
+            </a>
+
+        </div>
+
+
+        <!-- OUARZAZATE -->
+
+        <div class="card">
+
+            <img
+                src="ouarzazate.jpeg"
+                alt="Ouarzazate">
+
+            <h2>🏜️ Ouarzazate</h2>
+
+            <p>
+                Découvrez Aït Ben Haddou, la Kasbah de Taourirt,
+                les studios de cinéma et l'Oasis de Fint.
+            </p>
+
+            <a class="button" href="ouarzazate.html">
+                Découvrir Ouarzazate
+            </a>
+
+        </div>
+
+
+        <!-- CHEFCHAOUEN -->
+
+        <div class="card">
+
+            <img
+                src="chefchaoun.jpeg"
+                alt="Chefchaouen">
+
+            <h2>💙 Chefchaouen</h2>
+
+            <p>
+                Découvrez la médina bleue, la Kasbah,
+                Ras El Maa et les paysages d'Akchour.
+            </p>
+
+            <a class="button" href="chefchaouen.html">
+                Découvrir Chefchaouen
+            </a>
+
+        </div>
+
+
+        <!-- MARRAKECH -->
+
+        <div class="card">
+
+            <img
+                src="marrakech.jpeg"
+                alt="Marrakech">
+
+            <h2>🕌 Marrakech</h2>
+
+            <p>
+                Découvrez la place Jemaa El-Fna,
+                le Jardin Majorelle, le Palais Bahia
+                et les Jardins de la Menara.
+            </p>
+
+            <a class="button" href="marrakech.html">
+                Découvrir Marrakech
+            </a>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 - Découvrez le Maroc
+        </p>
+
+        <p>
+            Agadir • Ouarzazate • Chefchaouen • Marrakech
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
+
+    
